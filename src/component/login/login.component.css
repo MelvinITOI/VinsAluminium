@@ -1,0 +1,19 @@
+.card-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: lavender;
+}
+.card-login{
+    width: 400px;
+}
+.login-input{
+    width: -webkit-fill-available;
+}
+.card{
+    text-align: center;
+}
+.login-btn{
+    width: 40%;
+}
