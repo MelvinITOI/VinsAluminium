@@ -1,2 +1,23 @@
-<p>dashboard works!</p>
-<app-sidebar></app-sidebar>
+<!--SIDEBARD MENU-->
+<div class="card flex justify-content-center">
+    <p-sidebar [(visible)]="sidebarVisible">
+        <h3>Sidebar</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </p-sidebar>
+</div>
+<!--HEADER-->
+<div style="background-color: rgb(37, 80, 149); height: 65px;">
+    <div style=" display: flex; align-items: center; justify-content: space-between;">
+        <p-button (click)="sidebarVisible = true" class="menu-btn" slot="start" icon="pi pi-align-justify"></p-button>
+        <h2 style="color: white;">Dashboard</h2>
+        <i class="pi pi-user" slot="end" (click)="menu.toggle($event)" style="margin-right: 10px;
+        margin-bottom: 10px;font-size: 25px;;color: white;"></i>
+    </div>
+    <p-toast></p-toast>
+    <p-menu #menu [model]="items" [popup]="true"></p-menu>
+</div>
+<!--CONTENT-->
