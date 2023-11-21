@@ -7,11 +7,12 @@ import { MenuItem, MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { Router } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatListModule],
+  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatListModule,PanelMenuModule],
   templateUrl: './dashboard.component.html',
   providers: [MessageService],
   styleUrls: ['./dashboard.component.css']
@@ -19,7 +20,12 @@ import {MatListModule} from '@angular/material/list';
 export class DashboardComponent implements OnInit {
   sidebarVisible: boolean = false;
   popup: MenuItem[] | undefined;
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  items = [
+    { label: 'Home', icon: 'pi pi-fw pi-home' },
+    { label: 'About', icon: 'pi pi-fw pi-info' },
+    { label: 'Contact', icon: 'pi pi-fw pi-envelope' },
+    // Add more menu items as needed
+  ];
   constructor(private messageService: MessageService,private route:Router) { }
 
   ngOnInit() {

@@ -1,12 +1,13 @@
 <!--SIDEBARD MENU-->
 <div class="card flex justify-content-center">
     <p-sidebar [(visible)]="sidebarVisible">
-        <h3>Sidebar</h3>
-        <mat-list role="list">
+        <h3>Menu</h3>
+        <!-- <mat-list role="list">
             <mat-list-item role="listitem">Item 1</mat-list-item>
             <mat-list-item role="listitem">Item 2</mat-list-item>
             <mat-list-item role="listitem">Item 3</mat-list-item>
-          </mat-list>
+          </mat-list> -->
+          <p-panelMenu [model]="items" [multiple]="true"></p-panelMenu>
     </p-sidebar>
 </div>
 <!--HEADER-->
