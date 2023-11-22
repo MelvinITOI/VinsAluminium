@@ -12,3 +12,6 @@
 .card-2{
     margin-left: 15px;
 }
+:host ::ng-deep .p-sidebar .p-sidebar-footer{
+    background-color: #163059;
+}

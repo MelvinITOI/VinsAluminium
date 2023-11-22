@@ -1,13 +1,13 @@
 <!--SIDEBARD MENU-->
 <div class="card flex justify-content-center">
     <p-sidebar [(visible)]="sidebarVisible">
-        <h3>Menu</h3>
-        <!-- <mat-list role="list">
-            <mat-list-item role="listitem">Item 1</mat-list-item>
-            <mat-list-item role="listitem">Item 2</mat-list-item>
-            <mat-list-item role="listitem">Item 3</mat-list-item>
-          </mat-list> -->
-          <p-panelMenu [model]="items" [multiple]="true"></p-panelMenu>
+        <ng-template pTemplate="header"><h2>Menu</h2></ng-template>
+        <ng-template pTemplate="content">
+            <p-panelMenu [model]="items"></p-panelMenu>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div>Vins Aluminium</div>
+        </ng-template>
     </p-sidebar>
 </div>
 <!--HEADER-->
@@ -24,15 +24,9 @@
 <!--CONTENT-->
 <div style="display: flex;padding: 10px;">
     <p-card header="Title" class="card-1">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-            quas!
-        </p>
+      <div>STOCKS</div>
     </p-card>
     <p-card header="Title" class="card-2">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-            quas!
-        </p>
+       <div>NEW STOCKS</div>
     </p-card>
 </div>
