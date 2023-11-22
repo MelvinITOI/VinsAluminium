@@ -8,11 +8,12 @@ import { ToastModule } from 'primeng/toast';
 import { Router } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatListModule,PanelMenuModule],
+  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatListModule,PanelMenuModule,CardModule],
   templateUrl: './dashboard.component.html',
   providers: [MessageService],
   styleUrls: ['./dashboard.component.css']
@@ -24,7 +25,6 @@ export class DashboardComponent implements OnInit {
     { label: 'Home', icon: 'pi pi-fw pi-home' },
     { label: 'About', icon: 'pi pi-fw pi-info' },
     { label: 'Contact', icon: 'pi pi-fw pi-envelope' },
-    // Add more menu items as needed
   ];
   constructor(private messageService: MessageService,private route:Router) { }
 

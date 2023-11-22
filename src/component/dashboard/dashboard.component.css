@@ -2,3 +2,13 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+:host ::ng-deep .p-card { 
+    border-radius: 20px !important; 
+    width: 673px; 
+    border: 2px solid rgb(244, 130, 0); 
+    /* height: 50%; */
+    background-color: orange;
+} 
+.card-2{
+    margin-left: 15px;
+}
