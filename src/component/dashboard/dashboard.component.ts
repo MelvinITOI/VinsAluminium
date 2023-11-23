@@ -6,14 +6,14 @@ import { MenuModule } from 'primeng/menu';
 import { MenuItem, MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { Router } from '@angular/router';
-import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatListModule,PanelMenuModule,CardModule],
+  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatCardModule,PanelMenuModule,CardModule],
   templateUrl: './dashboard.component.html',
   providers: [MessageService],
   styleUrls: ['./dashboard.component.css']
