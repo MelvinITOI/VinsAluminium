@@ -1,7 +1,9 @@
 <!--SIDEBARD MENU-->
 <div class="card flex justify-content-center">
     <p-sidebar [(visible)]="sidebarVisible">
-        <ng-template pTemplate="header"><h2>Menu</h2></ng-template>
+        <ng-template pTemplate="header">
+            <h2>Menu</h2>
+        </ng-template>
         <ng-template pTemplate="content">
             <p-panelMenu [model]="items"></p-panelMenu>
         </ng-template>
@@ -21,30 +23,39 @@
     <p-toast></p-toast>
     <p-menu #menu [model]="popup" [popup]="true"></p-menu>
 </div>
-<!--CONTENT-->
-<div style="padding: 10px; display: flex; flex-wrap: nowrap;padding-left: 10px;">
-    <mat-card style="background-color: rgb(226, 157, 29);width: 25%;border-radius: 10px;">
-        <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-        <mat-card-subtitle>Glass</mat-card-subtitle>
-        <mat-card-content>Innova</mat-card-content>
-        <mat-card-footer>Good Product</mat-card-footer>
-    </mat-card>
-    <mat-card style="background-color: rgb(44, 44, 201);width: 25%;margin-left: 10px;border-radius: 10px;">
-        <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-        <mat-card-subtitle>Glass</mat-card-subtitle>
-        <mat-card-content>Innova</mat-card-content>
-        <mat-card-footer>Good Product</mat-card-footer>
-    </mat-card>
-    <mat-card style="background-color: rgb(117, 21, 62);width: 25%;margin-left: 10px;border-radius: 10px;">
-        <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-        <mat-card-subtitle>Glass</mat-card-subtitle>
-        <mat-card-content>Innova</mat-card-content>
-        <mat-card-footer>Good Product</mat-card-footer>
-    </mat-card>
-    <mat-card style="background-color: rgb(25, 163, 39);width: 25%;margin-left: 10px;border-radius: 10px;">
-        <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-        <mat-card-subtitle>Glass</mat-card-subtitle>
-        <mat-card-content>Innova</mat-card-content>
-        <mat-card-footer>Good Product</mat-card-footer>
-    </mat-card>
+<div class="card">
+    <div class="dock-window">
+        <p-dock [model]="docmenu" [position]="position">
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item.icon" [alt]="item.label" width="100%" />
+            </ng-template>
+        </p-dock>
+        <!-- <div style="padding: 10px; display: flex; flex-wrap: nowrap;padding-left: 10px;">
+            <mat-card style="background-color: rgb(226, 157, 29);width: 25%;border-radius: 10px;">
+                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
+                <mat-card-subtitle>Glass</mat-card-subtitle>
+                <mat-card-content>Innova</mat-card-content>
+                <mat-card-footer>Good Product</mat-card-footer>
+            </mat-card>
+            <mat-card style="background-color: rgb(44, 44, 201);width: 25%;margin-left: 10px;border-radius: 10px;">
+                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
+                <mat-card-subtitle>Glass</mat-card-subtitle>
+                <mat-card-content>Innova</mat-card-content>
+                <mat-card-footer>Good Product</mat-card-footer>
+            </mat-card>
+            <mat-card style="background-color: rgb(117, 21, 62);width: 25%;margin-left: 10px;border-radius: 10px;">
+                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
+                <mat-card-subtitle>Glass</mat-card-subtitle>
+                <mat-card-content>Innova</mat-card-content>
+                <mat-card-footer>Good Product</mat-card-footer>
+            </mat-card>
+            <mat-card style="background-color: rgb(25, 163, 39);width: 25%;margin-left: 10px;border-radius: 10px;">
+                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
+                <mat-card-subtitle>Glass</mat-card-subtitle>
+                <mat-card-content>Innova</mat-card-content>
+                <mat-card-footer>Good Product</mat-card-footer>
+            </mat-card>
+        </div> -->
+    </div>
 </div>
+<!--CONTENT-->
