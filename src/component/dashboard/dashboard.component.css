@@ -2,7 +2,9 @@
     padding: 10px;
     margin-bottom: 10px;
 }
-
+/* :host ::ng-deep .p-ripple{
+    background-color: forestgreen;
+} */
 :host ::ng-deep .p-card {
     border-radius: 20px !important;
     width: 673px;
@@ -10,26 +12,35 @@
     /* height: 50%; */
     background-color: orange;
 }
-
 .card-2 {
     margin-left: 15px;
 }
-
 :host ::ng-deep .p-sidebar .p-sidebar-footer {
     background-color: #163059;
 }
-
 :host ::ng-deep {
     /* .dock-window {
         width: 100%;
         height: 450px;
         position: relative;
-        background-image: url('https://primefaces.org/cdn/primeng/images/dock/window.jpg');
+        background-image: url('https://primefaces.org/cdn/primeng/images/dock/window.jpg'); 
         background-repeat: no-repeat;
         background-size: cover;
     } */
-
     .p-dock {
         z-index: 1000;
+        background-color: yellowgreen;
+        top: unset;
     }
+}
+.top-content{
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-top-left-radius: 30px;
+    background-color: white;
+    margin-left: 97px;
+}
+.top-border{
+  background-color: yellowgreen;
 }

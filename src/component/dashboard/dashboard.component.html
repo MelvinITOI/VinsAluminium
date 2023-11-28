@@ -13,7 +13,7 @@
     </p-sidebar>
 </div>
 <!--HEADER-->
-<div style="background-color: rgb(37, 80, 149); height: 65px;">
+<div style="background-color:yellowgreen; height: 65px;">
     <div style=" display: flex; align-items: center; justify-content: space-between;">
         <p-button (click)="sidebarVisible = true" class="menu-btn" slot="start" icon="pi pi-align-justify"></p-button>
         <h2 style="color: white;">Dashboard</h2>
@@ -27,35 +27,19 @@
     <div class="dock-window">
         <p-dock [model]="docmenu" [position]="position">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item.icon" [alt]="item.label" width="100%" />
+                <img [src]="item.icon" [alt]="item.label" width="93%" />
             </ng-template>
         </p-dock>
-        <!-- <div style="padding: 10px; display: flex; flex-wrap: nowrap;padding-left: 10px;">
-            <mat-card style="background-color: rgb(226, 157, 29);width: 25%;border-radius: 10px;">
-                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-                <mat-card-subtitle>Glass</mat-card-subtitle>
-                <mat-card-content>Innova</mat-card-content>
-                <mat-card-footer>Good Product</mat-card-footer>
-            </mat-card>
-            <mat-card style="background-color: rgb(44, 44, 201);width: 25%;margin-left: 10px;border-radius: 10px;">
-                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-                <mat-card-subtitle>Glass</mat-card-subtitle>
-                <mat-card-content>Innova</mat-card-content>
-                <mat-card-footer>Good Product</mat-card-footer>
-            </mat-card>
-            <mat-card style="background-color: rgb(117, 21, 62);width: 25%;margin-left: 10px;border-radius: 10px;">
-                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-                <mat-card-subtitle>Glass</mat-card-subtitle>
-                <mat-card-content>Innova</mat-card-content>
-                <mat-card-footer>Good Product</mat-card-footer>
-            </mat-card>
-            <mat-card style="background-color: rgb(25, 163, 39);width: 25%;margin-left: 10px;border-radius: 10px;">
-                <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
-                <mat-card-subtitle>Glass</mat-card-subtitle>
-                <mat-card-content>Innova</mat-card-content>
-                <mat-card-footer>Good Product</mat-card-footer>
-            </mat-card>
-        </div> -->
+        <div class="top-border">
+            <div class="top-content">
+                <!--WRITE THE DASHBOARD CONTENT HERE-->
+                <mat-card style="background-color: rgb(226, 157, 29);width: 25%;border-radius: 10px;">
+                    <mat-card-title style="padding: 5px;font-weight: 600;">Stocks</mat-card-title>
+                    <mat-card-subtitle>Glass</mat-card-subtitle>
+                    <mat-card-content>Innova</mat-card-content>
+                    <mat-card-footer>Good Product</mat-card-footer>
+                </mat-card>
+            </div>
+        </div>
     </div>
 </div>
-<!--CONTENT-->
