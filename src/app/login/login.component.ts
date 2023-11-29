@@ -5,11 +5,12 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule,ButtonModule,ReactiveFormsModule,CardModule,InputTextModule],
+  imports: [CommonModule,ButtonModule,ReactiveFormsModule,CardModule,InputTextModule,ImageModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
