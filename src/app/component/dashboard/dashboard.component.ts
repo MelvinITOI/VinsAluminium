@@ -26,6 +26,12 @@ export class DashboardComponent implements OnInit {
   sidebarVisible: boolean = false;
   popup: MenuItem[] | undefined;
   docmenu: MenuItem[] | undefined;
+  cards = [
+    { title: 'Card 1', description: 'Description for Card 1' },
+    { title: 'Card 2', description: 'Description for Card 2' },
+    { title: 'Card 3', description: 'Description for Card 3' },
+    { title: 'Card 4', description: 'Description for Card 4' }
+  ];
   items = [
     { label: 'Home', icon: 'pi pi-fw pi-home' },
     { label: 'About', icon: 'pi pi-fw pi-info' },
