@@ -39,8 +39,12 @@
     flex-wrap: nowrap;
     border-top-left-radius: 30px;
     background-color: white;
-    margin-left: 97px;
+    margin-left: 81px;
 }
 .top-border{
   background-color: yellowgreen;
+}
+:host ::ng-deep .p-dock .p-dock-link{
+  width: 3rem;
+  height: 3rem;
 }
