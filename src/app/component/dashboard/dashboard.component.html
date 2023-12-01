@@ -13,16 +13,16 @@
     </p-sidebar>
 </div>
 <!--HEADER-->
-<div style="background-color:yellowgreen; height: 65px;">
-    <div style=" display: flex; align-items: center; justify-content: space-between;">
+<div style="background: linear-gradient(to right, yellowgreen, lightgreen); height: 65px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
         <p-button (click)="sidebarVisible = true" class="menu-btn" slot="start" icon="pi pi-align-justify"></p-button>
         <h2 style="color: white;">Dashboard</h2>
-        <i class="pi pi-user" slot="end" (click)="menu.toggle($event)" style="margin-right: 10px;
-        margin-bottom: 10px;font-size: 25px;;color: white;"></i>
+        <i class="pi pi-user" slot="end" (click)="menu.toggle($event)" style="margin-right: 10px; margin-bottom: 10px; font-size: 25px; color: white;"></i>
     </div>
     <p-toast></p-toast>
     <p-menu #menu [model]="popup" [popup]="true"></p-menu>
 </div>
+
 <!--CONTENT-->
 <div class="card">
     <div class="dock-window">
@@ -35,20 +35,36 @@
         <div class="top-border">
             <div class="top-content">
                 <div class="card-container">
-                    <div class="p-card">
+                    <div class="p-card" style="background-image: url('assets/card-1.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
                         <h2>Title 1</h2>
                         <!-- Card content goes here -->
                     </div>
 
-                    <div class="p-card">
+                    <div class="p-card" style="background-image: url('assets/card-2.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
                         <h2>Title 2</h2>
                         <!-- Card content goes here -->
                     </div>
-                    <div class="p-card">
+                    <div class="p-card" style="background-image: url('assets/card-3.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
                         <h2>Title 2</h2>
                         <!-- Card content goes here -->
                     </div>
-                    <div class="p-card">
+                    <div class="p-card" style="background-image: url('assets/card-4.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
                         <h2>Title 2</h2>
                         <!-- Card content goes here -->
                     </div>
