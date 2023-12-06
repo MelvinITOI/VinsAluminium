@@ -1,22 +1,10 @@
-import { CommonModule } from '@angular/common';
-import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem, MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
 import { Router } from '@angular/router';
-import {MatCardModule} from '@angular/material/card';
-import { PanelMenuModule } from 'primeng/panelmenu';
-import { CardModule } from 'primeng/card';
-import { DockModule } from 'primeng/dock';
-import { RadioButtonModule } from 'primeng/radiobutton';
+
 
 @Component({
   selector: 'app-dashboard',
-  standalone: true,
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule, SidebarModule, ButtonModule, MenuModule,ToastModule,MatCardModule,PanelMenuModule,CardModule,DockModule,RadioButtonModule],
   templateUrl: './dashboard.component.html',
   providers: [MessageService],
   styleUrls: ['./dashboard.component.css']

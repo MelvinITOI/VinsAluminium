@@ -2,7 +2,7 @@ import { leadingComment } from '@angular/compiler';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { DashboardComponent } from './modules/dashboard/component/dashboard/dashboard.component';
 
 const routes: Routes = [
   {

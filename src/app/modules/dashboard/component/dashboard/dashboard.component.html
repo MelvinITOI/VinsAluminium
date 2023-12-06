@@ -1,4 +1,3 @@
-<!--SIDEBARD MENU-->
 <div class="card flex justify-content-center">
     <p-sidebar [(visible)]="sidebarVisible">
         <ng-template pTemplate="header">
@@ -13,62 +12,64 @@
     </p-sidebar>
 </div>
 <!--HEADER-->
-<div style="background: linear-gradient(to right, yellowgreen, lightgreen); height: 65px;">
+<div style="background: linear-gradient(to right, yellowgreen, lightgreen); height: 65px; ">
     <div style="display: flex; align-items: center; justify-content: space-between;">
         <p-button (click)="sidebarVisible = true" class="menu-btn" slot="start" icon="pi pi-align-justify"></p-button>
         <h2 style="color: white;">Dashboard</h2>
-        <i class="pi pi-user" slot="end" (click)="menu.toggle($event)" style="margin-right: 10px; margin-bottom: 10px; font-size: 25px; color: white;"></i>
+        <i class="pi pi-user" slot="end" (click)="menu.toggle($event)"
+            style="margin-right: 10px; margin-bottom: 10px; font-size: 25px; color: white;"></i>
     </div>
     <p-toast></p-toast>
     <p-menu #menu [model]="popup" [popup]="true"></p-menu>
 </div>
 
 <!--CONTENT-->
-<div class="card">
-    <div class="dock-window">
-        <p-dock [model]="docmenu" [position]="position">
-            <ng-template pTemplate="item" let-item>
-                <img [src]="item.icon" [alt]="item.label" width="93%" />
-            </ng-template>
-        </p-dock>
-        <!--WRITE THE DASHBOARD CONTENT HERE-->
-        <div class="top-border">
-            <div class="top-content">
-                <div class="card-container">
-                    <div class="p-card" style="background-image: url('assets/card-5.jpg');
+<div>
+    <p-dock [model]="docmenu" [position]="position">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.icon" [alt]="item.label" width="93%" />
+        </ng-template>
+    </p-dock>
+    <!--WRITE THE DASHBOARD CONTENT HERE-->
+    <div class="top-border">
+        <div class="top-content">
+            <div class="card-container">
+                <div class="p-card" style="background-image: url('assets/card-5.jpg');
                     /* Specify background size, repeat, and position if needed */
                     background-size: cover; /* or contain, or a specific size */
                     background-repeat: no-repeat; /* or repeat-x, repeat-y */
                     background-position: center center;">
-                        <h2>Title 1</h2>
-                        <!-- Card content goes here -->
-                    </div>
-
-                    <div class="p-card" style="background-image: url('assets/card-6.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                        <h2>Title 2</h2>
-                        <!-- Card content goes here -->
-                    </div>
-                    <div class="p-card" style="background-image: url('assets/card-7.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                        <h2>Title 2</h2>
-                        <!-- Card content goes here -->
-                    </div>
-                    <div class="p-card" style="background-image: url('assets/card-8.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                        <h2>Title 2</h2>
-                        <!-- Card content goes here -->
-                    </div>
+                    <h2>Title 1</h2>
+                    <!-- Card content goes here -->
                 </div>
+
+                <div class="p-card" style="background-image: url('assets/card-6.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
+                    <h2>Title 2</h2>
+                    <!-- Card content goes here -->
+                </div>
+                <div class="p-card" style="background-image: url('assets/card-7.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
+                    <h2>Title 2</h2>
+                    <!-- Card content goes here -->
+                </div>
+                <div class="p-card" style="background-image: url('assets/card-8.jpg');
+                    /* Specify background size, repeat, and position if needed */
+                    background-size: cover; /* or contain, or a specific size */
+                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
+                    background-position: center center;">
+                    <h2>Title 2</h2>
+                    <!-- Card content goes here -->
+                </div>
+            </div>
+            <div class="bar-chart">
+                <app-chart></app-chart>
             </div>
         </div>
     </div>
