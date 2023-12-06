@@ -32,8 +32,6 @@
 
 .top-content {
     padding: 15px;
-    display: flex;
-    flex-wrap: nowrap;
     border-top-left-radius: 30px;
     background-color: white;
     margin-left: 81px;
@@ -69,7 +67,6 @@
     /* Adjust as needed */
 }
 .bar-chart{
-    position: absolute;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 10px;
 }
