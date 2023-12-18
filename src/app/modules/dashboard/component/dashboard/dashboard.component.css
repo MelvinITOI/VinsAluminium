@@ -16,7 +16,7 @@
 }
 
 :host ::ng-deep .p-sidebar .p-sidebar-footer {
-    background-color: #163059;
+    background: linear-gradient(to right, yellowgreen, lightgreen);
 }
 
 :host ::ng-deep {
