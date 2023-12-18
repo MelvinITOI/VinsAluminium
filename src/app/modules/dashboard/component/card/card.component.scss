@@ -1,0 +1,14 @@
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+}
+.p-card {
+    width: 24%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow:0px 6px 8px 0px rgb(25 18 216 / 10%);
+    margin-bottom: 20px;
+    /* Adjust as needed */
+}

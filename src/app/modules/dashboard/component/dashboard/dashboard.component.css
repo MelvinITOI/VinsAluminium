@@ -3,9 +3,6 @@
     margin-bottom: 10px;
 }
 
-/* :host ::ng-deep .p-ripple{
-    background-color: forestgreen;
-} */
 :host ::ng-deep .p-card {
     border-radius: 20px !important;
     width: 673px;
@@ -48,25 +45,4 @@
 
 :host ::ng-deep .p-button.p-button-icon-only{
   background-color: rgb(97 163 97);
-}
-/* card.component.css */
-
-.card-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: -webkit-fill-available;
-}
-
-.p-card {
-    width: 24%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-    box-shadow:0px 6px 8px 0px rgb(25 18 216 / 10%);
-    margin-bottom: 20px;
-    /* Adjust as needed */
-}
-.bar-chart{
-    margin-top: 30px;
-    margin-left: 10px;
 }

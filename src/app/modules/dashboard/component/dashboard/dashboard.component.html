@@ -1,3 +1,4 @@
+<!--SIDE-MENU-->
 <div class="card flex justify-content-center">
     <p-sidebar [(visible)]="sidebarVisible">
         <ng-template pTemplate="header">
@@ -22,7 +23,6 @@
     <p-toast></p-toast>
     <p-menu #menu [model]="popup" [popup]="true"></p-menu>
 </div>
-
 <!--CONTENT-->
 <div>
     <p-dock [model]="docmenu" [position]="position">
@@ -33,43 +33,13 @@
     <!--WRITE THE DASHBOARD CONTENT HERE-->
     <div class="top-border">
         <div class="top-content">
-            <div class="card-container">
-                <div class="p-card" style="background-image: url('assets/card-5.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                    <h2>Title 1</h2>
-                    <!-- Card content goes here -->
-                </div>
-
-                <div class="p-card" style="background-image: url('assets/card-6.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                    <h2>Title 2</h2>
-                    <!-- Card content goes here -->
-                </div>
-                <div class="p-card" style="background-image: url('assets/card-7.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                    <h2>Title 2</h2>
-                    <!-- Card content goes here -->
-                </div>
-                <div class="p-card" style="background-image: url('assets/card-8.jpg');
-                    /* Specify background size, repeat, and position if needed */
-                    background-size: cover; /* or contain, or a specific size */
-                    background-repeat: no-repeat; /* or repeat-x, repeat-y */
-                    background-position: center center;">
-                    <h2>Title 2</h2>
-                    <!-- Card content goes here -->
-                </div>
-            </div>
-            <div class="bar-chart">
-                <app-chart></app-chart>
+            <!--DASHBOARD-CARD-->
+            <app-card></app-card>
+            <!--DASHBOARD-CHART-->
+            <div [style.display]="'flex'">
+                <app-chart style="flex: 1;"></app-chart>
+                <div style="width: 20px;"></div>
+                <app-donet-chart style="flex: 0.5;"></app-donet-chart>
             </div>
         </div>
     </div>

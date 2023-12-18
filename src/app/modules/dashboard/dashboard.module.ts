@@ -11,9 +11,10 @@ import { MenuModule } from 'primeng/menu';
 import { ToastModule } from 'primeng/toast';
 import { ChartsModule } from '../chart/charts.module';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { CardComponent } from './component/card/card.component';
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [DashboardComponent,CardComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
